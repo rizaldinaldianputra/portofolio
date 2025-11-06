@@ -1,4 +1,4 @@
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<div class="my-20 relatif grid grid-cols-1 sm:grid-cols-3 gap-6">
 
     {{-- Clients --}}
     <div

@@ -1,4 +1,4 @@
-<header class="bg-white dark:bg-gray-900 shadow">
+<header class="bg-indigo-600">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
 
@@ -40,8 +40,7 @@
     </div>
 
     {{-- Mobile Menu --}}
-    <div id="mobile-menu"
-        class="hidden md:hidden border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
+    <div id="mobile-menu" class="hidden md:hidden border-t border-white bg-indigo-600">
         <nav class="flex flex-col space-y-4 px-6 py-4">
             <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600">About</a>
             <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600">Projects</a>

@@ -14,7 +14,25 @@
                 <div class="p-4 flex-1 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-semibold text-gray-800">{{ $project->title }}</h3>
-                        <p class="text-gray-500 mt-1">{{ $project->client->name ?? '-' }}</p>
+                        <p class="text-gray-500 mt-1">{{ $project->technologies }}</p>
+
+                        @if ($project->platform)
+                            @php
+                                // Tentukan warna badge berdasarkan platform
+                                $platformColors = [
+                                    'Web' => 'bg-blue-100 text-blue-800',
+                                    'Mobile' => 'bg-green-100 text-green-800',
+                                    'Desktop' => 'bg-yellow-100 text-yellow-800',
+                                    'Other' => 'bg-gray-100 text-gray-800',
+                                ];
+
+                                $badgeClass = $platformColors[$project->platform] ?? $platformColors['Other'];
+                            @endphp
+                            <span
+                                class="inline-block mt-2 px-3 py-1 rounded-full text-sm font-medium {{ $badgeClass }}">
+                                {{ $project->platform }}
+                            </span>
+                        @endif
                     </div>
                 </div>
             </div>
