@@ -13,7 +13,7 @@
 
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body>
 
     <!-- Header -->
     @yield('header')
@@ -38,5 +38,12 @@
         </div>
     </footer>
 </body>
+
+<script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    });
+</script>
 
 </html>

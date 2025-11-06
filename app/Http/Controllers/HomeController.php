@@ -17,10 +17,22 @@ class HomeController extends Controller
         $clientReviews = ClientReview::all();
         $banners = Banner::all();
         $clients = Client::all();
-
         $socialMedias = SocialMedia::all();
 
+        // Tambahkan count untuk overview card
+        $clientsCount = $clients->count();
+        $projectsCount = $projects->count();
+        $reviewsCount = $clientReviews->count();
 
-        return view('home', compact('projects', 'clientReviews', 'socialMedias', 'clients', 'banners'));
+        return view('home', compact(
+            'projects',
+            'clientReviews',
+            'socialMedias',
+            'clients',
+            'banners',
+            'clientsCount',
+            'projectsCount',
+            'reviewsCount'
+        ));
     }
 }

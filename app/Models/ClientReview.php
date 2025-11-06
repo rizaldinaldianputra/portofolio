@@ -15,7 +15,7 @@ class ClientReview extends Model
         'position',
         'review',
         'rating',
-        'image'
+        'avatar'
     ];
 
     public function client()
