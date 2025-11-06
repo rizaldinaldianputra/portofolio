@@ -15,8 +15,6 @@
 
 <body>
 
-    <!-- Header -->
-    @yield('header')
 
 
     <!-- Content -->
@@ -45,5 +43,6 @@
         menu.classList.toggle('hidden');
     });
 </script>
+
 
 </html>
