@@ -5,7 +5,10 @@
         {{-- Text Content --}}
         <div class="max-w-prose text-left z-10 relative">
             <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl">
-                Welcome, <strong class="text-indigo-600">Rizaldi Naldian Putra</strong>
+                Welcome,
+            </h1>
+            <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl">
+                <strong class="text-indigo-600">Rizaldi Naldian Putra</strong>
             </h1>
             <p class="mt-4 text-base text-gray-700 sm:text-lg/relaxed">
                 Explore my portfolio showcasing clients, projects, and reviews.

@@ -7,6 +7,7 @@ use App\Models\Client;
 use Illuminate\Http\Request;
 use App\Models\Project;
 use App\Models\ClientReview;
+use App\Models\Service;
 use App\Models\SocialMedia;
 
 class HomeController extends Controller
@@ -18,6 +19,7 @@ class HomeController extends Controller
         $banners = Banner::all();
         $clients = Client::all();
         $socialMedias = SocialMedia::all();
+        $services = Service::all();
 
         // Tambahkan count untuk overview card
         $clientsCount = $clients->count();
@@ -25,6 +27,7 @@ class HomeController extends Controller
         $reviewsCount = $clientReviews->count();
 
         return view('home', compact(
+            'services',
             'projects',
             'clientReviews',
             'socialMedias',
