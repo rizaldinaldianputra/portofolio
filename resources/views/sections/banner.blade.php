@@ -28,13 +28,11 @@
 
         {{-- Single Banner --}}
         @if ($banner = $banners->first())
-            <div
-                class="mt-8 md:mt-0 relative w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[600px] rounded-2xl shadow-2xl overflow-hidden">
+            <div class="mt-8 md:mt-0 relative w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[600px]">
                 <img src="{{ asset('storage/' . $banner->url_image) }}" alt="{{ $banner->title }}"
-                    class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+                    class="w-full h-full">
 
                 {{-- Optional Overlay for better contrast --}}
-                <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent"></div>
 
 
             </div>

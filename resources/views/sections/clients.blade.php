@@ -7,7 +7,7 @@
                 <div class="bg-white p-4 rounded shadow text-center">
                     @if ($client->logo)
                         <img src="{{ asset('storage/' . $client->logo) }}" alt="{{ $client->name }}"
-                            class="w-24 h-24 mx-auto rounded-full object-cover mb-4">
+                            class="w-24 h-24 mx-auto rounded-full object-fill mb-4">
                     @endif
                     <p class="font-semibold text-lg">{{ $client->name }}</p>
                     @if ($client->website)
