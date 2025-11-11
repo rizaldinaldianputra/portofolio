@@ -16,9 +16,7 @@ class AllSeeder extends Seeder
 {
     public function run(): void
     {
-        // =====================
-        // 1. USERS
-        // =====================
+ 
         User::create([
             'name' => 'Admin Portfolio',
             'email' => 'admin@example.com',
@@ -33,9 +31,7 @@ class AllSeeder extends Seeder
             'is_admin' => false,
         ]);
 
-        // =====================
-        // 2. SERVICES
-        // =====================
+      
         $services = [
             ['title' => 'Web Development', 'image' => 'services/web-dev.png', 'description' => 'Membuat website modern dan responsive.'],
             ['title' => 'Mobile App', 'image' => 'services/mobile-app.png', 'description' => 'Membuat aplikasi Android & iOS.'],
@@ -46,9 +42,6 @@ class AllSeeder extends Seeder
             Service::create($service);
         }
 
-        // =====================
-        // 3. BANNERS
-        // =====================
         $banners = [
             ['title' => 'Selamat Datang', 'url_image' => 'banners/banner1.jpg', 'description' => 'Portfolio terbaik kami.'],
             ['title' => 'Proyek Terbaru', 'url_image' => 'banners/banner2.jpg', 'description' => 'Proyek-proyek unggulan kami.'],
@@ -58,9 +51,7 @@ class AllSeeder extends Seeder
             Banner::create($banner);
         }
 
-        // =====================
-        // 4. CLIENTS
-        // =====================
+     
         $client1 = Client::create([
             'name' => 'PT. Contoh Client',
             'logo' => 'clients/client1.png',
@@ -73,9 +64,7 @@ class AllSeeder extends Seeder
             'website' => 'https://client2.com',
         ]);
 
-        // =====================
-        // 5. CLIENT REVIEWS
-        // =====================
+    
         ClientReview::create([
             'client_id' => $client1->id,
             'reviewer_name' => 'John Doe',
